@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎀 cutiepie birthday · 18 ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FLOATING BALLOONS -->
+  <div class="balloons-container">
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+  </div>
+
+  <!-- CLAPPING CONTAINER -->
+  <div class="clap-container" id="clapContainer"></div>
+
+  <!-- CONFETTI CANVAS -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- TEXT MESSAGE POPUP -->
+  <div class="popup-overlay" id="messagePopup">
+    <div class="popup-card">
+      <div class="popup-header">💌 📖</div>
+      <div class="popup-message">
+        Many Many Happy Returns Of The Day Samia, <br>
+        Doa kori oenk boro hou r Ikra ke amar haate tule dao 😋
+      </div>
+      <div class="popup-actions">
+        <button class="popup-btn close-btn" id="closePopupBtn">❤️ Close</button>
+        <button class="popup-btn envelope-btn" id="envelopeBtn">🧧 Envelope</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE LIGHTBOX (bestwishes.png) -->
+  <div class="image-overlay" id="imageOverlay">
+    <div class="image-container">
+      <img src="https://raw.githubusercontent.com/genshindummy114-gif/samia-bday/main/images/bestwishes.png" alt="Best Wishes" id="bestWishesImg">
+      <button class="image-close-btn" id="closeImageBtn">✉️ Close Envelope</button>
+    </div>
+  </div>
+
+  <!-- MAIN CARD -->
+  <div class="card">
+
+    <!-- ========== PAGE 1: CAT & MESSAGE ========== -->
+    <div class="cat-message" id="firstPage">
+      
+      <div class="sparkle-container">
+        <div class="sparkle">✨</div>
+        <div class="sparkle">🌟</div>
+        <div class="sparkle">✨</div>
+        <div class="sparkle">🌟</div>
+        <div class="sparkle">✨</div>
+        <div class="sparkle">🌟</div>
+
+        <div class="cat-wrapper">
+          <img 
+            class="cat-base" 
+            src="https://raw.githubusercontent.com/genshindummy114-gif/samia-bday/main/images/photos/cute.webp" 
+            alt="Cute white cat with birthday cake"
+          >
+          <div class="cat-blinking"></div>
+        </div>
+      </div>
+
+      <div class="message-box">
+        <p>
+          <span>🎀</span> A Cutiepie was born today, 18 years ago! <span>🎂</span>
+        </p>
+        <div class="sub-message">✨ the sweetest sparkle ✨</div>
+      </div>
+
+      <button class="surprise-btn" id="surpriseBtn">
+        <span class="icon-emoji">🎁</span>
+        start the surprise
+        <span class="icon-emoji">✨</span>
+      </button>
+    </div>
+
+    <!-- ========== PAGE 2: CAKE & KNIFE ========== -->
+    <div id="surprisePage" class="surprise-page">
+      
+      <div class="cake-container">
+        <!-- Happy Birthday Message -->
+        <div class="birthday-message" id="birthdayMsg">🎉 Happy Birthday, Cutiepiee! 🎉</div>
+
+        <!-- The Cake -->
+        <div class="cake-art" id="cakeArt">
+          <div class="cake-whole" id="cakeWhole">🎂</div>
+          <div class="cake-split left" id="cakeLeft">🍰</div>
+          <div class="cake-split right" id="cakeRight">🍰</div>
+
+          <div class="candle-wrapper" id="candleWrapper">
+            <div class="candle-flame"></div>
+            <div class="candle-stick"></div>
+          </div>
+
+          <div class="knife-container" id="knifeContainer">
+            <div class="knife-emoji">🔪</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="cake-btn highlight" id="decorateBtn">🎨 Decorate</button>
+        <button class="cake-btn" id="cutBtn" style="display: none;">🔪 Cut the Cake</button>
+        
+        <!-- Message Button -->
+        <div class="message-btn-container" id="messageBtnContainer">
+          <button class="message-btn" id="messageBtn">💌 Message from me</button>
+        </div>
+        
+        <button class="reset-small" id="resetSurpriseBtn">🔄 Start Over</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
