@@ -527,6 +527,49 @@
     }
 
     /* ========================================= */
+    /* AGE REVEAL                                 */
+    /* ========================================= */
+    .age-reveal {
+      margin: 10px auto 5px;
+      max-width: 320px;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(4px);
+      padding: 1rem 1.4rem;
+      border-radius: 40px;
+      border: 1px solid #ffccd9;
+      box-shadow: 0 4px 12px rgba(255, 120, 150, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+      opacity: 0;
+      transform: translateY(10px) scale(0.95);
+      transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+      pointer-events: none;
+    }
+
+    .age-reveal.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .age-reveal-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #a13e5a;
+      margin-bottom: 4px;
+    }
+
+    .age-reveal-days {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #872341;
+      letter-spacing: 0.02em;
+    }
+
+    .age-reveal-sub {
+      font-size: 0.9rem;
+      color: #b35d76;
+      margin-top: 2px;
+    }
+
+    /* ========================================= */
     /* MESSAGE POPUP                              */
     /* ========================================= */
     .message-btn-container {
@@ -835,4 +878,6 @@
       .popup-card { padding: 1.5rem; }
       .popup-actions { flex-direction: column; align-items: center; }
       .image-container { padding: 1rem; }
+      .age-reveal { max-width: 90%; padding: 0.9rem 1rem; }
+      .age-reveal-days { font-size: 1.6rem; }
     }
